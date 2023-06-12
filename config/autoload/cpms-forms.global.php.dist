@@ -1,0 +1,29 @@
+<?php
+
+//See cpms-forms/config/module.config for options that can be extended
+
+return [
+    'cpms_forms' => [
+
+        'partials' => [
+            //Path to view partial, for custom form rendering
+            'form' => 'partial/cpms-form.phtml',
+        ],
+
+        'payment_types' => [
+            'stored_card' => [
+                //Optional. Form class must extend CpmsForms\Form\PaymentForm
+                //'form' => 'Scheme\Form\StoredCardPaymentForm',
+
+                //this is where form elements can be customized, overwritten and also be added
+                'form_elements' => [
+                    'stored_card' => [
+                        'attributes' => [
+                            'class' => 'form-control scheme-css-class',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+];

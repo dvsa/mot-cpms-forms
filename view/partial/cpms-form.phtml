@@ -1,0 +1,35 @@
+<?php
+/** @var \CpmsForm\Form\PaymentForm $form */
+$form->setAttribute('class', 'form-horizontal');
+$form->prepare();
+?>
+<?php echo $this->form()->openTag($form); ?>
+
+<?php foreach ($form->getElements() as $element): ?>
+    <?php if ($element->getAttributes()['type'] == 'hidden'): ?>
+
+        <?php echo $this->formHidden($element); ?>
+
+    <?php else: ?>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label"><?php echo $element->getLabel(); ?></label>
+
+            <div class="col-sm-10">
+                <?php echo $this->formElement($element); ?>
+                <?php echo $this->formElementErrors($element); ?>
+            </div>
+        </div>
+
+    <?php endif; ?>
+
+<?php endforeach; ?>
+<?php if ($form->has('payment_data')): ?>
+    <?php echo $this->formCollection($form->get('payment_data')); ?>
+<?php endif; ?>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <input type="submit" class="btn btn-primary" value="<?php echo $this->translate('Make Payment'); ?>">
+        </div>
+    </div>
+<?php echo $this->form()->closeTag($form); ?>

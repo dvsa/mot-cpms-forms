@@ -1,0 +1,22 @@
+<phpunit bootstrap="./test/Bootstrap.php"
+         colors="true"
+         stopOnFailure="false"
+         timeoutForSmallTests="900"
+         timeoutForMediumTests="6000"
+         timeoutForLargeTests="12000"
+>
+
+    <testsuites>
+        <testsuite name="CPMS Forms Test Suite">
+            <directory>./test/CpmsFormTest</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <report>
+            <html outputDirectory="build/coverage" lowUpperBound="50" highLowerBound="80"/>
+        </report>
+    </coverage>
+</phpunit>
