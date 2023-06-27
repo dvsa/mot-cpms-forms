@@ -1,0 +1,8 @@
+/vendor
+/composer.phar
+build/
+coverage-report/
+*local.php
+.phpunit.result.cache
+.idea
+.DS_Store

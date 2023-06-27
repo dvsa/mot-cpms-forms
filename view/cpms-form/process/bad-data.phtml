@@ -1,0 +1,15 @@
+<div class="failure" id="validation-failure">
+    <?php if (!empty($this->heading)): ?>
+        <h3 class="message__heading">Invalid Payment Data</h3>
+    <?php endif; ?>
+
+    <?php if (is_array($message)): ?>
+        <p><?php echo sprintf(
+                '%s<strong>%s</strong>',
+                $this->escapeHtml($message[0]),
+                $this->escapeHtml($message[1])
+            ); ?></p>
+    <?php else: ?>
+        <p><?php echo $this->escapeHtml($message); ?></p>
+    <?php endif; ?>
+</div>
