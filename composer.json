@@ -25,7 +25,7 @@
         "captainhook/captainhook": "^5.16",
         "captainhook/plugin-composer": "^5.3",
         "dvsa/mot-cpms-common": "^1.0.0",
-        "dvsa/mot-cpms-payment-test": "^1.0.0",
+        "dvsa/mot-cpms-payment-test": "^1.0.1",
         "laminas/laminas-component-installer": "^2.5",
         "laminas/laminas-test": "^4.0.0",
         "phpunit/phpunit": "^9.5"
