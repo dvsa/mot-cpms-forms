@@ -34,7 +34,7 @@ class ProcessController extends AbstractActionController
      */
     public function formAction()
     {
-        $data = $this->params()->fromQuery('data');
+        $data = $this->params()->fromQuery('data') ?? '';
         $data = unserialize(base64_decode($data));
 
         if (empty($data) || !is_array($data)) {
