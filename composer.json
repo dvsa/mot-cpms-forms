@@ -7,7 +7,7 @@
     "type": "library",
     "require": {
         "php": "^8.2",
-        "dvsa/mot-cpms-client": "^3.1.0",
+        "dvsa/mot-cpms-client": "dev-feature-bl-15040-code-linting",
         "laminas/laminas-session": "^2.11",
         "laminas/laminas-http": "^2.14",
         "laminas/laminas-mvc": "^3.3.0",
