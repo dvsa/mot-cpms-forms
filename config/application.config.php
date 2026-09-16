@@ -19,7 +19,6 @@ return array(
         'Laminas\InputFilter',
         'Laminas\Hydrator',
         'Laminas\Filter',
-        'Laminas\Log',
         'Laminas\Router',
         'Laminas\Validator',
         'CpmsClient',

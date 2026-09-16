@@ -7,7 +7,7 @@
     "type": "library",
     "require": {
         "php": "^8.2",
-        "dvsa/mot-cpms-client": "^3.1.0",
+        "dvsa/mot-cpms-client": "^3.1.1",
         "laminas/laminas-session": "^2.11",
         "laminas/laminas-http": "^2.14",
         "laminas/laminas-mvc": "^3.3.0",
@@ -15,7 +15,6 @@
         "laminas/laminas-validator": "^2.14",
         "laminas/laminas-json": "^3.3",
         "laminas/laminas-router": "^3.4",
-        "laminas/laminas-math": "^3.3",
         "laminas/laminas-hydrator": "^4.2",
         "laminas/laminas-dependency-plugin": "^2.6.0",
         "laminas/laminas-i18n": "^2.9",
@@ -24,7 +23,7 @@
     "require-dev": {
         "captainhook/captainhook": "^5.16",
         "captainhook/plugin-composer": "^5.3",
-        "dvsa/mot-cpms-common": "^3.0.0",
+        "dvsa/mot-cpms-common": "^3.0.1",
         "dvsa/mot-cpms-payment-test": "^3.0.0",
         "laminas/laminas-component-installer": "^3.4.0",
         "laminas/laminas-test": "^4.0.0",

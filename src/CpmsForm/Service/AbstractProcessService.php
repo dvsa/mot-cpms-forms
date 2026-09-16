@@ -206,7 +206,7 @@ abstract class AbstractProcessService
                 'code'    => self::CODE_FAILURE,
                 'message' => 'CPMS Client - An Error occurred while processing form data'
             );
-            $this->getClient()->getLogger()->err($exception->getMessage());
+            $this->getClient()->getLogger()->error($exception->getMessage());
             $redirectUrl = $parameters->get('redirect_uri');
 
             return $this->prepareRedirectUrl($redirectUrl, $result);
