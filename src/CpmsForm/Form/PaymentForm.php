@@ -16,10 +16,10 @@ use Laminas\Form\Element\Collection;
  */
 abstract class PaymentForm extends AbstractBaseForm
 {
-    const CLASS_NAME              = __CLASS__;
-    const FORM_NAME               = 'payment';
-    const FIELD_NAME_PAYMENT_TYPE = 'payment_type';
-    const PAYMENT_DATA_KEY        = 'payment_data';
+    public const CLASS_NAME              = __CLASS__;
+    public const FORM_NAME               = 'payment';
+    public const FIELD_NAME_PAYMENT_TYPE = 'payment_type';
+    public const PAYMENT_DATA_KEY        = 'payment_data';
 
     /**
      * @var string

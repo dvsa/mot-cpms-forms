@@ -13,9 +13,9 @@ use CpmsForm\Payment\StoredCardPaymentInterface;
  */
 class StoredCardPaymentForm extends PaymentForm
 {
-    const CLASS_NAME             = __CLASS__;
-    const FIELD_NAME_STORED_CARD = 'card_reference';
-    const CARD_STATUS_ACTIVE     = 192;
+    public const CLASS_NAME             = __CLASS__;
+    public const FIELD_NAME_STORED_CARD = 'card_reference';
+    public const CARD_STATUS_ACTIVE     = 192;
 
     /**
      * @var string

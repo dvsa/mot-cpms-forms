@@ -15,7 +15,7 @@ use Laminas\View\Helper\AbstractHelper;
  */
 class RenderCpmsForm extends AbstractHelper
 {
-    const CLASS_PATH = __CLASS__;
+    public const CLASS_PATH = __CLASS__;
 
     /** @var ContainerInterface */
     private $serviceLocator;

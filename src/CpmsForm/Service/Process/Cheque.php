@@ -14,7 +14,7 @@ use Laminas\Stdlib\Parameters;
  */
 class Cheque extends AbstractProcessService implements DataAwareInterface
 {
-    const PAYMENT_REFERENCE_KEY = 'payment_reference';
+    public const PAYMENT_REFERENCE_KEY = 'payment_reference';
 
     /** @var array */
     private $referenceFields

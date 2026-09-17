@@ -14,7 +14,7 @@ use Laminas\InputFilter\InputFilterProviderInterface;
  */
 abstract class AbstractBaseForm extends LaminasForm implements InputFilterProviderInterface
 {
-    const CSRF_NAME = 'csrf';
+    public const CSRF_NAME = 'csrf';
 
     /** @var array */
     protected $defaultFilters

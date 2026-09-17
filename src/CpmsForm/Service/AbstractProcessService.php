@@ -19,10 +19,10 @@ use Laminas\Stdlib\Parameters;
  */
 abstract class AbstractProcessService
 {
-    const QUERY_PARAM_REDIRECT = 'redirect_uri';
-    const CODE_SUCCESSFUL      = 801;
-    const CODE_FAILURE         = 701;
-    const FINALIZE_ENDPOINT    = '/api/gateway/%s/complete';
+    public const QUERY_PARAM_REDIRECT = 'redirect_uri';
+    public const CODE_SUCCESSFUL      = 801;
+    public const CODE_FAILURE         = 701;
+    public const FINALIZE_ENDPOINT    = '/api/gateway/%s/complete';
 
     /** @var  ApiService */
     protected $client;

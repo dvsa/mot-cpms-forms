@@ -21,7 +21,7 @@ use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
  */
 class GetCpmsPaymentForm extends AbstractPlugin
 {
-    const CLASS_PATH = __CLASS__;
+    public const CLASS_PATH = __CLASS__;
     /**
      * @param BasePaymentInterface $payment
      * @return PaymentForm|\CpmsForm\Form\StoredCardPaymentForm|\Laminas\Http\Response

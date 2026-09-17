@@ -10,14 +10,14 @@ namespace CpmsForm\Payment;
  */
 interface BasePaymentInterface
 {
-    const PAYMENT_TYPE_CARD         = 'card';
-    const PAYMENT_TYPE_CARD_CHNP    = 'cardholderNotPresent';
-    const PAYMENT_TYPE_STORED_CARD  = 'storedCard';
-    const PAYMENT_TYPE_DIRECT_DEBIT = 'directDebit';
-    const PAYMENT_TYPE_CASH         = 'cash';
-    const PAYMENT_TYPE_CHEQUE       = 'cheque';
-    const PAYMENT_TYPE_POSTAL_ORDER = 'postalOrder';
-    const PAYMENT_TYPE_CHIP_PIN     = 'chipPin';
+    public const PAYMENT_TYPE_CARD         = 'card';
+    public const PAYMENT_TYPE_CARD_CHNP    = 'cardholderNotPresent';
+    public const PAYMENT_TYPE_STORED_CARD  = 'storedCard';
+    public const PAYMENT_TYPE_DIRECT_DEBIT = 'directDebit';
+    public const PAYMENT_TYPE_CASH         = 'cash';
+    public const PAYMENT_TYPE_CHEQUE       = 'cheque';
+    public const PAYMENT_TYPE_POSTAL_ORDER = 'postalOrder';
+    public const PAYMENT_TYPE_CHIP_PIN     = 'chipPin';
 
     public function getUserId();
 

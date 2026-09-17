@@ -18,7 +18,7 @@ class Bootstrap
 
     protected static $application;
 
-    protected static $_instance;
+    protected static $instance;
 
     protected static $config;
 
@@ -31,11 +31,11 @@ class Bootstrap
      */
     public static function getInstance()
     {
-        if (!static::$_instance) {
-            static::$_instance = new self();
+        if (!static::$instance) {
+            static::$instance = new self();
         }
 
-        return static::$_instance;
+        return static::$instance;
     }
 
     /**
@@ -152,10 +152,3 @@ class Bootstrap
     {
     }
 }
-$_SERVER['argv'] = ['test'];
-$path = realpath(__DIR__ . '/../');
-
-chdir(dirname($path));
-/** @var Bootstrap $bootstrap */
-$bootstrap = Bootstrap::getInstance();
-$bootstrap->init($path, array('CpmsFormTest'));
