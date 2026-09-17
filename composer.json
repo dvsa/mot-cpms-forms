@@ -23,6 +23,7 @@
     "require-dev": {
         "captainhook/captainhook": "^5.16",
         "captainhook/plugin-composer": "^5.3",
+        "dvsa/coding-standards": "^2.0",
         "dvsa/mot-cpms-common": "^3.0.1",
         "dvsa/mot-cpms-payment-test": "^3.0.0",
         "laminas/laminas-component-installer": "^3.4.0",

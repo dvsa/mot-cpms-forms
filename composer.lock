@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24e6f6280a466bf305b246bd4c529a80",
+    "content-hash": "c794e24603541e6ef176a391836d9695",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5409,6 +5409,61 @@
             "time": "2026-06-13T19:29:35+00:00"
         },
         {
+            "name": "dvsa/coding-standards",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dvsa/php-coding-standards.git",
+                "reference": "f3d8b09db1fc7e91988bc32eb67830a88df0bd95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dvsa/php-coding-standards/zipball/f3d8b09db1fc7e91988bc32eb67830a88df0bd95",
+                "reference": "f3d8b09db1fc7e91988bc32eb67830a88df0bd95",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "squizlabs/php_codesniffer": "^3.1 || ^4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0"
+            },
+            "suggest": {
+                "friendsofphp/php-cs-fixer": "To use the shared coding standards ruleset for PHP CS Fixer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dvsa\\PhpCodingStandards\\PhpCsFixer\\": "src/Profiles/DVSA/PhpCsFixer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shaun Hare",
+                    "email": "shaun.hare@dvsa.gov.uk"
+                },
+                {
+                    "name": "Igor Stimoli",
+                    "email": "igor.stimoli@bjss.com"
+                },
+                {
+                    "name": "Chris Emerson",
+                    "email": "chris.emerson@bjss.com"
+                }
+            ],
+            "description": "Coding Standards used for PHP in the Driver and Vehicle Standards Agency. PSR Compliant.",
+            "support": {
+                "issues": "https://github.com/dvsa/php-coding-standards/issues",
+                "source": "https://github.com/dvsa/php-coding-standards/tree/v2.1.0"
+            },
+            "time": "2026-07-10T09:36:51+00:00"
+        },
+        {
             "name": "dvsa/mot-cpms-common",
             "version": "v3.0.1",
             "source": {
@@ -7774,6 +7829,90 @@
                 }
             ],
             "time": "2023-10-04T10:59:08+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
+                "reference": "bbdc3d0532623e21838b7041a4364383a8126f96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/bbdc3d0532623e21838b7041a4364383a8126f96",
+                "reference": "bbdc3d0532623e21838b7041a4364383a8126f96",
+                "shasum": ""
+            },
+            "require": {
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.4.0 || ^9.3.4 || ^10.5.32 || 11.3.3 - 11.5.28 || ^11.5.31"
+            },
+            "suggest": {
+                "ext-iconv": "For accurate character length calculation when the checked files contain multi-byte characters.",
+                "ext-pcntl": "For parallel processing support via the --parallel CLI option."
+            },
+            "bin": [
+                "bin/phpcbf",
+                "bin/phpcs"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "Former lead"
+                },
+                {
+                    "name": "Juliette Reinders Folmer",
+                    "role": "Current lead"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer/graphs/contributors"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/PHPCSStandards/PHP_CodeSniffer/issues",
+                "security": "https://github.com/PHPCSStandards/PHP_CodeSniffer/security/policy",
+                "source": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
+                "wiki": "https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/PHPCSStandards",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/jrfnl",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/php_codesniffer",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/phpcsstandards",
+                    "type": "thanks_dev"
+                }
+            ],
+            "time": "2026-08-06T02:45:27+00:00"
         },
         {
             "name": "symfony/console",
