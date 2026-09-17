@@ -1,4 +1,5 @@
 <?php
+
 namespace CpmsForm\Service\Process;
 
 use CpmsForm\DataAwareInterface;
@@ -42,7 +43,6 @@ class Cheque extends AbstractProcessService implements DataAwareInterface
                 $fieldValue = $parameters->get($field);
                 if (!empty($fieldValue)) {
                     $payload[PaymentForm::PAYMENT_DATA_KEY][$key][self::PAYMENT_REFERENCE_KEY][$field] = $fieldValue;
-
                 }
             }
         }

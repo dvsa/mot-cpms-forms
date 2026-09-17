@@ -1,4 +1,5 @@
 <?php
+
 namespace CpmsForm\Service\Process;
 
 use CpmsForm\DataAwareInterface;
@@ -21,7 +22,7 @@ class DirectDebit extends AbstractProcessService implements DataAwareInterface
      */
     public function addData(array $payload, Parameters $parameters)
     {
-        unset ($payload[PaymentForm::PAYMENT_DATA_KEY]);
+        unset($payload[PaymentForm::PAYMENT_DATA_KEY]);
         $payload = array_merge(
             $payload,
             [

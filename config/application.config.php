@@ -1,4 +1,5 @@
 <?php
+
 if (!defined('APPLICATION_ENV')) {
     if (isset($_SERVER['APPLICATION_ENV'])) {
         $env = $_SERVER['APPLICATION_ENV'];

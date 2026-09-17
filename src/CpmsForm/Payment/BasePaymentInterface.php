@@ -8,8 +8,7 @@ namespace CpmsForm\Payment;
  * @package CpmsForm\Payment
  * @author  Jakub Igla <jakub.igla@valtech.co.uk>
  */
-interface
-BasePaymentInterface
+interface BasePaymentInterface
 {
     const PAYMENT_TYPE_CARD         = 'card';
     const PAYMENT_TYPE_CARD_CHNP    = 'cardholderNotPresent';

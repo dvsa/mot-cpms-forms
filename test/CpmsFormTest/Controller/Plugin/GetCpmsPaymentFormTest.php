@@ -46,7 +46,6 @@ class GetCpmsPaymentFormTest extends AbstractHttpControllerTestCase
 
         $this->reset();
 
-
         $serviceManager = $bootstrap->getServiceManager();
         $serviceManager->setAllowOverride(true);
         $matched = [
@@ -56,7 +55,10 @@ class GetCpmsPaymentFormTest extends AbstractHttpControllerTestCase
         $serviceLocatorPlugin = new ServiceLocatorPlugin($serviceManager);
 
         $this->setupController(
-            $serviceManager, new ProcessController(), $matched, [
+            $serviceManager,
+            new ProcessController(),
+            $matched,
+            [
                 'getCpmsPaymentForm' => new GetCpmsPaymentForm(),
                 'redirect'           => new Redirect(),
                 'getServiceLocator'  => $serviceLocatorPlugin
@@ -108,7 +110,6 @@ class GetCpmsPaymentFormTest extends AbstractHttpControllerTestCase
 
         $data = [];
         foreach ($form->getElements() as $name => $element) {
-
             if ($element instanceof \Laminas\Form\Element\Select) {
                 $data[$name] = current($element->getValueOptions());
                 continue;

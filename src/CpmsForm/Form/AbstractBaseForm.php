@@ -92,7 +92,6 @@ abstract class AbstractBaseForm extends LaminasForm implements InputFilterProvid
             } else {
                 $inputSpecification[$name]['required']    = false;
                 $inputSpecification[$name]['allow_empty'] = true;
-
             }
         }
 
@@ -108,7 +107,6 @@ abstract class AbstractBaseForm extends LaminasForm implements InputFilterProvid
             if (isset($this->formValidators[$name])) {
                 $this->formValidators[$name] = array_merge($this->formValidators[$name], $validator);
             } else {
-
                 $this->formValidators[$name] = $validator;
             }
         }

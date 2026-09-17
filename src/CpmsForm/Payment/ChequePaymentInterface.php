@@ -10,5 +10,4 @@ namespace CpmsForm\Payment;
  */
 interface ChequePaymentInterface extends BasePaymentInterface
 {
-
 }

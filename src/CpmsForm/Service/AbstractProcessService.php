@@ -221,7 +221,9 @@ abstract class AbstractProcessService
     protected function callCpms($payload)
     {
         return $this->getClient()->post(
-            $this->getEndPoint(), $this->getScope(), $payload
+            $this->getEndPoint(),
+            $this->getScope(),
+            $payload
         );
     }
 

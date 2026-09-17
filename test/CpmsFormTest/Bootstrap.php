@@ -4,7 +4,6 @@ namespace CpmsFormTest;
 
 use Laminas\Mvc\Application;
 
-
 /**
  * Test bootstrap, for setting up auto loading
  * @method setUpDatabase()
@@ -25,7 +24,6 @@ class Bootstrap
 
     protected function __construct()
     {
-
     }
 
     /**

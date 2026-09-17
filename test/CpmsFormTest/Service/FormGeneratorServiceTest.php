@@ -58,7 +58,6 @@ class FormGeneratorServiceTest extends AbstractHttpControllerTestCase
 
         $this->assertEquals($type, $form->getPaymentType());
         $this->assertInstanceOf(get_class($this->service), $form->getService());
-
     }
 
     /**

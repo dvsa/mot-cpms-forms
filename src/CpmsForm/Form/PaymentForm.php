@@ -57,7 +57,6 @@ abstract class PaymentForm extends AbstractBaseForm
         $this->add($productsCollection);
 
         if ($payment instanceof MultiProductPayment) {
-
             $productsCollection->setCount(count($payment->getProducts()));
 
             /** @var Product $product */
@@ -68,7 +67,6 @@ abstract class PaymentForm extends AbstractBaseForm
                     'product_reference' => $product->getProductReference(),
                 ];
             }
-
         } else {
             $productsCollection->setCount(1);
 
@@ -148,8 +146,7 @@ abstract class PaymentForm extends AbstractBaseForm
      */
     public function getProductCollection()
     {
-        if (empty($this->productCollection))
-        {
+        if (empty($this->productCollection)) {
             $this->productCollection = new Collection('default', []);
         }
         return $this->productCollection;

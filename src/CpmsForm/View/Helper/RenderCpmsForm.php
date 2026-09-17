@@ -31,7 +31,8 @@ class RenderCpmsForm extends AbstractHelper
      *
      * @param array $partials
      */
-    public function setPartials(array $partials = []) {
+    public function setPartials(array $partials = [])
+    {
         $this->partials = $partials;
     }
 

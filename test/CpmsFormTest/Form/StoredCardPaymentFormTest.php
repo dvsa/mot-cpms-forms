@@ -23,7 +23,6 @@ use PHPUnit\Framework\TestCase;
  */
 class StoredCardPaymentFormTest extends TestCase
 {
-
     /** @var  \Laminas\ServiceManager\ServiceManager */
     protected $serviceManager;
 
