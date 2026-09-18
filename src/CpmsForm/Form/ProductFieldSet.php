@@ -12,7 +12,7 @@ use Laminas\InputFilter\InputFilterProviderInterface;
  */
 class ProductFieldSet extends Fieldset implements InputFilterProviderInterface
 {
-    const CLASS_PATH = __CLASS__;
+    public const CLASS_PATH = __CLASS__;
 
     public function init()
     {

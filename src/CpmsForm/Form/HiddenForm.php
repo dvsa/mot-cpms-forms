@@ -10,7 +10,7 @@ namespace CpmsForm\Form;
  */
 class HiddenForm extends AbstractBaseForm
 {
-    const FORM_NAME = 'payment';
+    public const FORM_NAME = 'payment';
 
     /**
      * Override constructor

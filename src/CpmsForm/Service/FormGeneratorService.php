@@ -20,11 +20,11 @@ class FormGeneratorService
 {
     use PaymentTypeResolverTrait;
 
-    const CLASS_PATH                     = __CLASS__;
-    const ROUTE_PARAM_CUSTOMER_REFERENCE = 'customer';
-    const ENDPOINT_STORED_CARD_LIST      = 'stored_card_list';
-    const FORM_DEFAULT                   = PaymentForm::CLASS_NAME;
-    const STORED_CARD_STATUS             = 'status';
+    public const CLASS_PATH                     = __CLASS__;
+    public const ROUTE_PARAM_CUSTOMER_REFERENCE = 'customer';
+    public const ENDPOINT_STORED_CARD_LIST      = 'stored_card_list';
+    public const FORM_DEFAULT                   = PaymentForm::CLASS_NAME;
+    public const STORED_CARD_STATUS             = 'status';
 
     /**
      * @var array

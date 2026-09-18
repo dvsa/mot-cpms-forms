@@ -1,0 +1,30 @@
+name: 'PHP CodeSniffer'
+description: 'Install PHP dependencies and run PHP_CodeSniffer'
+
+inputs:
+  php-version:
+    description: 'PHP version to use'
+    required: true
+    default: '8.2'
+  composer-version:
+    description: 'Composer version to use'
+    required: true
+    default: 'v2.2.24'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ inputs.php-version }}
+        coverage: none
+        tools: phpcs, composer:${{ inputs.composer-version }}
+
+    - name: Install Composer dependencies
+      run: composer install --no-progress --no-interaction
+      shell: bash
+
+    - name: Execute PHP CodeSniffer
+      run: phpcs -q
+      shell: bash

@@ -21,7 +21,7 @@ use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
  */
 class GetCpmsPaymentForm extends AbstractPlugin
 {
-    const CLASS_PATH = __CLASS__;
+    public const CLASS_PATH = __CLASS__;
     /**
      * @param BasePaymentInterface $payment
      * @return PaymentForm|\CpmsForm\Form\StoredCardPaymentForm|\Laminas\Http\Response
@@ -43,7 +43,6 @@ class GetCpmsPaymentForm extends AbstractPlugin
         //this is to directly redirect to 3rd party gateway for card payments.
         //A bit dirty, but in zf2 you can't get form data before validation
         if ($payment instanceof CardPaymentInterface) {
-
             $paymentData = [];
             /** @var \Laminas\Form\Element\Text $element */
             foreach ($form->getElements() as $element) {
@@ -75,7 +74,6 @@ class GetCpmsPaymentForm extends AbstractPlugin
         $request = $controller->getRequest();
 
         if ($request->isPost()) {
-
             $form->setData($controller->params()->fromPost());
 
             if ($form->isValid()) {

@@ -2,7 +2,6 @@
 
 namespace CpmsForm\Service;
 
-
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 
@@ -14,9 +13,9 @@ use Laminas\ServiceManager\Factory\FactoryInterface;
  */
 class FormGeneratorServiceFactory implements FactoryInterface
 {
-    const CLASS_PATH = __CLASS__;
+    public const CLASS_PATH = __CLASS__;
 
-    const API_SERVICE_PATH = 'cpms\service\api';
+    public const API_SERVICE_PATH = 'cpms\service\api';
 
     /**
      * Create FormFactoryService

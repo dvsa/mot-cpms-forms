@@ -10,5 +10,4 @@ namespace CpmsForm\Payment;
  */
 interface PostalOrderPaymentInterface extends BasePaymentInterface
 {
-
 }

@@ -11,7 +11,7 @@ use Laminas\Validator\Date;
  */
 class CashPaymentForm extends PaymentForm
 {
-    const DATE_FORMAT = 'd-M-Y';
+    public const DATE_FORMAT = 'd-M-Y';
 
     /** @var array */
     protected $formValidators

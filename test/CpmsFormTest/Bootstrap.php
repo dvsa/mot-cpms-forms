@@ -4,7 +4,6 @@ namespace CpmsFormTest;
 
 use Laminas\Mvc\Application;
 
-
 /**
  * Test bootstrap, for setting up auto loading
  * @method setUpDatabase()
@@ -19,13 +18,12 @@ class Bootstrap
 
     protected static $application;
 
-    protected static $_instance;
+    protected static $instance;
 
     protected static $config;
 
     protected function __construct()
     {
-
     }
 
     /**
@@ -33,11 +31,11 @@ class Bootstrap
      */
     public static function getInstance()
     {
-        if (!static::$_instance) {
-            static::$_instance = new self();
+        if (!static::$instance) {
+            static::$instance = new self();
         }
 
-        return static::$_instance;
+        return static::$instance;
     }
 
     /**
@@ -154,10 +152,3 @@ class Bootstrap
     {
     }
 }
-$_SERVER['argv'] = ['test'];
-$path = realpath(__DIR__ . '/../');
-
-chdir(dirname($path));
-/** @var Bootstrap $bootstrap */
-$bootstrap = Bootstrap::getInstance();
-$bootstrap->init($path, array('CpmsFormTest'));

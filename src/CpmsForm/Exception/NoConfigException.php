@@ -10,5 +10,4 @@ namespace CpmsForm\Exception;
  */
 class NoConfigException extends \Exception
 {
-
 }

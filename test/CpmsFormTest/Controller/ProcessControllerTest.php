@@ -57,7 +57,10 @@ class ProcessControllerTest extends AbstractHttpControllerTestCase
         $serviceLocatorPlugin = new ServiceLocatorPlugin($serviceManager);
 
         $this->setupController(
-            $serviceManager, new ProcessController(), $matched, [
+            $serviceManager,
+            new ProcessController(),
+            $matched,
+            [
                 'getCpmsPaymentForm' => new GetCpmsPaymentForm(),
                 'redirect'           => new Redirect(),
                 'getServiceLocator'  => $serviceLocatorPlugin

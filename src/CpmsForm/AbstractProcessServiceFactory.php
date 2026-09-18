@@ -13,7 +13,7 @@ use Laminas\ServiceManager\Factory\AbstractFactoryInterface;
  */
 class AbstractProcessServiceFactory implements AbstractFactoryInterface
 {
-    const API_SERVICE_PATH = 'cpms\service\api';
+    public const API_SERVICE_PATH = 'cpms\service\api';
 
     /*    /** @var string */
     protected $configPrefix = 'cpms_forms\process\\';

@@ -9,5 +9,4 @@ namespace CpmsForm\Form;
  */
 class CardholderNotPresentPaymentForm extends PaymentForm
 {
-
 }

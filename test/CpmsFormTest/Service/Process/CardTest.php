@@ -1,4 +1,5 @@
 <?php
+
 namespace CpmsFormTest\Process;
 
 use CpmsForm\Payment\BasePaymentInterface;

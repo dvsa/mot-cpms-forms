@@ -10,5 +10,4 @@ namespace CpmsForm\Form\Exception;
  */
 class ServiceNotSetException extends \Exception
 {
-
 }

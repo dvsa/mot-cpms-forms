@@ -19,10 +19,10 @@ use Laminas\Stdlib\Parameters;
  */
 abstract class AbstractProcessService
 {
-    const QUERY_PARAM_REDIRECT = 'redirect_uri';
-    const CODE_SUCCESSFUL      = 801;
-    const CODE_FAILURE         = 701;
-    const FINALIZE_ENDPOINT    = '/api/gateway/%s/complete';
+    public const QUERY_PARAM_REDIRECT = 'redirect_uri';
+    public const CODE_SUCCESSFUL      = 801;
+    public const CODE_FAILURE         = 701;
+    public const FINALIZE_ENDPOINT    = '/api/gateway/%s/complete';
 
     /** @var  ApiService */
     protected $client;
@@ -206,7 +206,7 @@ abstract class AbstractProcessService
                 'code'    => self::CODE_FAILURE,
                 'message' => 'CPMS Client - An Error occurred while processing form data'
             );
-            $this->getClient()->getLogger()->err($exception->getMessage());
+            $this->getClient()->getLogger()->error($exception->getMessage());
             $redirectUrl = $parameters->get('redirect_uri');
 
             return $this->prepareRedirectUrl($redirectUrl, $result);
@@ -221,7 +221,9 @@ abstract class AbstractProcessService
     protected function callCpms($payload)
     {
         return $this->getClient()->post(
-            $this->getEndPoint(), $this->getScope(), $payload
+            $this->getEndPoint(),
+            $this->getScope(),
+            $payload
         );
     }
 

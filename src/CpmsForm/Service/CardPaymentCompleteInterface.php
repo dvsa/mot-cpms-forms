@@ -1,6 +1,5 @@
 <?php
 
-
 namespace CpmsForm\Service;
 
 /**
@@ -10,7 +9,6 @@ namespace CpmsForm\Service;
  */
 interface CardPaymentCompleteInterface
 {
-
     /**
      * Finalise Card
      *

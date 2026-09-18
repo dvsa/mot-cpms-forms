@@ -1,4 +1,5 @@
 <?php
+
 if (!defined('APPLICATION_ENV')) {
     if (isset($_SERVER['APPLICATION_ENV'])) {
         $env = $_SERVER['APPLICATION_ENV'];
@@ -19,7 +20,6 @@ return array(
         'Laminas\InputFilter',
         'Laminas\Hydrator',
         'Laminas\Filter',
-        'Laminas\Log',
         'Laminas\Router',
         'Laminas\Validator',
         'CpmsClient',

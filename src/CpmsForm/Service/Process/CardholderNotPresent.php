@@ -1,4 +1,5 @@
 <?php
+
 namespace CpmsForm\Service\Process;
 
 /**
@@ -8,5 +9,4 @@ namespace CpmsForm\Service\Process;
  */
 class CardholderNotPresent extends Card
 {
-
 }

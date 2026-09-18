@@ -14,7 +14,7 @@ use Laminas\InputFilter\InputFilterProviderInterface;
  */
 abstract class AbstractBaseForm extends LaminasForm implements InputFilterProviderInterface
 {
-    const CSRF_NAME = 'csrf';
+    public const CSRF_NAME = 'csrf';
 
     /** @var array */
     protected $defaultFilters
@@ -92,7 +92,6 @@ abstract class AbstractBaseForm extends LaminasForm implements InputFilterProvid
             } else {
                 $inputSpecification[$name]['required']    = false;
                 $inputSpecification[$name]['allow_empty'] = true;
-
             }
         }
 
@@ -108,7 +107,6 @@ abstract class AbstractBaseForm extends LaminasForm implements InputFilterProvid
             if (isset($this->formValidators[$name])) {
                 $this->formValidators[$name] = array_merge($this->formValidators[$name], $validator);
             } else {
-
                 $this->formValidators[$name] = $validator;
             }
         }

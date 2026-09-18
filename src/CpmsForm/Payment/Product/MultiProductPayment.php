@@ -55,7 +55,7 @@ abstract class MultiProductPayment
 
             return $this;
     }
-    
+
     public function add(Product $product)
     {
         $this->products[] = $product;

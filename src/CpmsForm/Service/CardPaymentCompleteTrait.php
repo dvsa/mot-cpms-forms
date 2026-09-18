@@ -1,6 +1,5 @@
 <?php
 
-
 namespace CpmsForm\Service;
 
 use CpmsClient\Service\ApiService;
@@ -13,7 +12,6 @@ use CpmsClient\Service\ApiService;
  */
 trait CardPaymentCompleteTrait
 {
-
     /**
      * Finalise Card
      *
