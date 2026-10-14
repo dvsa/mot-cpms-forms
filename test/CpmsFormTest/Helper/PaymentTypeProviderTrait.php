@@ -33,7 +33,7 @@ trait PaymentTypeProviderTrait
 
         foreach ($types as &$type) {
             $type[0]
-                ->setUserId(123)
+                ->setUserId('123')
                 ->setSalesReference(124)
                 ->setProductReference(125)
                 ->setCostCentre('12345,98765')
@@ -56,7 +56,7 @@ trait PaymentTypeProviderTrait
 
         foreach ($types as &$type) {
             $type[0]
-                ->setUserId(223)
+                ->setUserId('223')
                 ->setSalesReference(224)
                 ->setProductReference(225)
                 ->setAmount(226.00)
