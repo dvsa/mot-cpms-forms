@@ -14,7 +14,7 @@ return array(
                 'domain'             => 'http://payment-app.psdv-ap01.ps.npm',
                 'client_id'          => 'U6Se"<V]Fpw3r5+',
                 'client_secret'      => 'motsecret',
-                'user_id'            => 56098,
+                'user_id'            => '56098',
                 'customer_reference' => 'AE-DM123',
             ),
         ),

@@ -11,6 +11,7 @@
             <directory>./test/CpmsFormTest</directory>
         </testsuite>
     </testsuites>
+
     <coverage>
         <include>
             <directory suffix=".php">./src</directory>
@@ -19,4 +20,6 @@
             <html outputDirectory="build/coverage" lowUpperBound="50" highLowerBound="80"/>
         </report>
     </coverage>
+
+
 </phpunit>

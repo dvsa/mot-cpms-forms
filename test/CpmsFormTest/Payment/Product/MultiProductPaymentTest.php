@@ -28,7 +28,7 @@ class MultiProductPaymentTest extends TestCase
         $salesRef   = 'asd';
         $prodRef    = 'prod';
         $redirect   = 'http';
-        $userId     = 1;
+        $userId     = '1';
         $custRef    = 'ref';
         $costCentre = '12345,67809';
         $custName   = 'Company Name';
